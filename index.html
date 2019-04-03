@@ -29,7 +29,10 @@
         <div class="postButtons">
 
             <!-- Insert code for All Posts & Create Post button here -->
-            <input  class="centerButtons" type="submit" value="All Posts" />
+            <form method="get" action="html/bloglist.html">
+                <input  class="centerButtons" type="submit" value="All Posts" />
+            </form>
+            
             <input  id = "createPostBtn" class="centerButtons" type="button" value="Create Post" />
 
         </div>
@@ -43,7 +46,32 @@
 
     <div>
 
-    	<!-- Insert code for Sign Up modal here -->
+        <!-- Insert code for Sign Up modal here -->
+        <div id="signUpModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="signUpclose">&times;</span>
+                    <h2>Get Started</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="fullname">Full Name </label>
+                        <input  id="fullname" type="text" placeholder="Enter Full Name"  required>
+                        <label for="username">Username </label>
+                        <input  id="username" type="text" placeholder="Enter Username"  required>
+                        <label for="password">Password </label>
+                        <input  id="password" type="password" placeholder="Enter Password"  required>
+                        <label for="password">Confirm Password </label>
+                        <input  id="password" type="password" placeholder="Confirm Password"  required>
+                        <button>Sign Up</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
+        </div>
 
     </div>
 
@@ -54,9 +82,9 @@
     </div>
 
 	<!-- Place all Javascript for header in this file -->
-	<script src="js\header.js"></script>
+	<script src="js\header.js" type='text/javascript'></script>
 	<!-- Place all Javascript for rest of the elements in this file -->
-    <script src="js\index.js"></script>
+    <script src="js\index.js" type='text/javascript'></script>
 
 </body>
 </html>
