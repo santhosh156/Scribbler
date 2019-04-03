@@ -29,6 +29,25 @@ input.topButtons {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+input.centerButtons {
+    width: 90px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 90%;
+    background: #daa520;
+    color: #000000;
+    margin: 10px 10px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.postButtons {
+    display : flex;
+    flex-direction: row;
+    margin: 200px 10px 0px 0px;
+    justify-content: center;
+}
+
 input.createPostButton{
     width: 30%;
     background-color: #4CAF50;
