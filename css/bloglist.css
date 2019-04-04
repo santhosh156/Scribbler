@@ -4,7 +4,7 @@
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
+    margin: 10px 100px 10px 50px;
     float:left;
     border-radius: 15px;
 }
@@ -44,8 +44,10 @@
     font-size: 30px;
 }
 .post-desc{
-    height: 100px;
+    height: 50px;
     margin-bottom: 0 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 body {
@@ -60,5 +62,43 @@ body {
 .allPostsContainer {
     height: 100%;
     width: 100%;
+}
 
+.container {
+    display: flex;
+}
+
+.last-container {
+    display: flex;
+    width: 50%;
+}
+
+/* The Trash Button */
+.trash-btn {
+    color: black;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 17px;
+}
+.trash-btn:hover,
+.trash-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Trash Button */
+.more-btn {
+    color: black;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 17px;
+}
+.more-btn:hover,
+.more-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
