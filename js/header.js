@@ -15,6 +15,7 @@ var signUpclose = document.getElementById("signUpclose");
 
 var signInclose = document.getElementById("signInclose");
 
+
 // When the user clicks the button, open the modal
 signInBtn.onclick = function() {
     signupmodal.style.display = "none";
