@@ -3,18 +3,13 @@ var signupmodal = document.getElementById('signUpModal');
 
 var signinmodal = document.getElementById('signInModal');
 
-var createpostmodal = document.getElementById("createPostModal");
-
 var signInBtn = document.getElementById("signInBtn");
 
 var signUpBtn = document.getElementById("signUpBtn");
 
-var createPostBtn = document.getElementById("createPostBtn");
-
 var signUpclose = document.getElementById("signUpclose");
 
 var signInclose = document.getElementById("signInclose");
-
 
 // When the user clicks the button, open the modal
 signInBtn.onclick = function() {
@@ -26,7 +21,6 @@ signUpBtn.onclick = function() {
     signinmodal.style.display = "none";
     signupmodal.style.display = "block";
 }
-
 
 // When the user clicks on <span> (x), close the modal
 signUpclose.onclick = function() {

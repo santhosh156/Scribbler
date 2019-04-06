@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <!-- Place all CSS for header in this file -->
@@ -8,32 +9,36 @@
     <!-- Place all CSS for the rest of the elements in this file -->
     <link href='css\index.css' rel='stylesheet' type='text/css'>
 
-	<!-- Place all CSS for fonts in this file -->
+    <!-- Place all CSS for fonts in this file -->
     <link href='css\font.css' rel='stylesheet' type='text/css'>
 
+    <title>Scribbler</title>
+
 </head>
+
 <body>
     <div id="main-container-div">
 
-        <div class="header">
+        <div class="header clearfix">
 
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-            <input id = "signInBtn" class="topButtons" type="button" value="Sign In" />
-            <input id = "signUpBtn" class="topButtons" type="button" value="Sign Up" />
-
-             <a class="logo-title"> ScriBBler</a>
-             <p class="middleText"> Explore ,Imagine , Create</p>
+            <div class="logo-container">
+                <a class="logo-title" href="index.html"> ScriBBler</a>
+                <p class="middleText"> Explore ,Imagine , Create</p>
+            </div>
+            <div class="top-buttons">
+                <input id="signUpBtn" class="topButtons" type="button" value="Sign Up" />
+                <input id="signInBtn" class="topButtons" type="button" value="Sign In" />
+            </div>
 
         </div>
-           
+
         <div class="postButtons">
 
             <!-- Insert code for All Posts & Create Post button here -->
-            <form method="get" action="html/bloglist.html">
-                <input  class="centerButtons" type="submit" value="All Posts" />
-            </form>
-            
-            <input  id = "createPostBtn" class="centerButtons" type="button" value="Create Post" />
+            <input class="centerButtons transform-center" type="button" value="All Posts"
+                onclick="redirectToAllPosts()" />
+            <input id="createPostBtn" class="centerButtons transform-center" type="button" value="Create Post" />
 
         </div>
     </div>
@@ -46,20 +51,21 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close" id="signInclose">&times;</span>
-                    <h2>Welcome back!</h2>
+                    <h1>Welcome Back!</h1>
                 </div>
                 <hr>
                 <div class="modal-body">
                     <form>
-                    <label for="username">Username </label>
-                    <input  id="username" type="text" placeholder="Enter Username"  required>
-                    <label for="password">Password </label>
-                    <input  id="password" type="password" placeholder="Enter Password"  required>
-                    <button>Sign In</button>
+                        <label for="username">Username </label>
+                        <input id="username" type="text" placeholder="Enter Username" required>
+                        <label for="password">Password </label>
+                        <input id="password" type="password" placeholder="Enter Password" required>
+                        <button class="signin-btn">Sign In</button>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <p>Not a member?</p> <a class="signUpLink" onclick="signUpModel()"> Sign Up</a>
+                    <p>Not a member?</p>
+                    <a class="signUpLink" onclick="signUpModel()"> Sign Up</a>
                 </div>
             </div>
         </div>
@@ -74,19 +80,20 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close" id="signUpclose">&times;</span>
-                    <h2>Get Started</h2>
+                    <h1>Get Started</h1>
                 </div>
+                <hr>
                 <div class="modal-body">
                     <form>
                         <label for="fullname">Full Name </label>
-                        <input  id="fullname" type="text" placeholder="Enter Full Name"  required>
+                        <input id="fullname" type="text" placeholder="Enter Full Name" required>
                         <label for="username">Username </label>
-                        <input  id="username" type="text" placeholder="Enter Username"  required>
+                        <input id="username" type="text" placeholder="Enter Username" required>
                         <label for="password">Password </label>
-                        <input  id="password" type="password" placeholder="Enter Password"  required>
+                        <input id="password" type="password" placeholder="Enter Password" required>
                         <label for="password">Confirm Password </label>
-                        <input  id="password" type="password" placeholder="Confirm Password"  required>
-                        <button>Sign Up</button>
+                        <input id="password" type="password" placeholder="Confirm Password" required>
+                        <button class="signup-btn">Sign Up</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -98,14 +105,40 @@
 
     <div>
 
-    	<!-- Insert code for Create Post modal here -->
+        <!-- Insert code for Create Post modal here -->
+        <div id="createPostModal" class="modal">
 
+            <!-- Modal content -->
+            <div class="create-post-modal-content">
+                <div class="create-post-modal-header">
+                    <span class="close" id="createPostClose">&times;</span>
+                    <h2>Pen Your Post</h2>
+                </div>
+                <div class="create-post-modal-body">
+                    <form>
+                        <div>
+                            <label>Title: </label>
+                            <input id="title" type="text" required>
+                        </div>
+                        <div>
+                            <label>Content: </label>
+                            <textarea rows="20" id="contentTextarea" required></textarea>
+                        </div>
+                        <div class="create-modal-footer">
+                            <input class="createButton" type="button" value="Create" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-	<!-- Place all Javascript for header in this file -->
-	<script src="js\header.js" type='text/javascript'></script>
-	<!-- Place all Javascript for rest of the elements in this file -->
+    <!-- Place all Javascript for header in this file -->
+    <script src="js\header.js" type='text/javascript'></script>
+    <!-- Place all Javascript for rest of the elements in this file -->
     <script src="js\index.js" type='text/javascript'></script>
 
 </body>
+
 </html>
