@@ -13,6 +13,7 @@ var createPostBtn = document.getElementById("createPostBtn");
 
 var signUpclose = document.getElementById("signUpclose");
 
+
 var signInclose = document.getElementById("signInclose");
 
 

@@ -248,6 +248,14 @@ input.createButton{
     color: black;    
 }
 
+#createPostClose {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    padding-right: 15px;
+    margin-top: -10px;
+}
+
 #title {
     width: 50%;
 }
@@ -256,10 +264,3 @@ input.createButton{
     background-color: #F0F0F0;
 }
 
-#createPostClose {
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-    padding-right: 15px;
-    margin-top: -10px;
-}
