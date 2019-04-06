@@ -27,6 +27,10 @@ signUpBtn.onclick = function() {
     signupmodal.style.display = "block";
 }
 
+createPostBtn.onclick = function(){
+    createpostmodal.style.display = "block";
+}
+
 
 // When the user clicks on <span> (x), close the modal
 signUpclose.onclick = function() {
@@ -46,6 +50,10 @@ window.onclick = function(event) {
 
     if (event.target == signupmodal) {
         signupmodal.style.display = "none";
+    }
+
+    if (event.target == createpostmodal) {
+        createpostmodal.style.display = "none";
     }
 }
 
