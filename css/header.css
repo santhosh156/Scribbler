@@ -8,6 +8,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     margin: auto;
     text-decoration: none;
     margin: 10px 10px 0px 10px;
+    cursor: pointer;
 }
 
 .middleText{

@@ -1,16 +1,15 @@
+var i = 0;
 
 var deleteBlogModal = document.getElementById('deleteBlog');
 
-var trashBtn = document.getElementById('delBtn');
-/*var trashBtn = document.getElementsByClassName('delBtn')*/
-
 var noBtn = document.getElementById('noBtn');
-
-trashBtn.onclick = function() {
-    deleteBlogModal.style.display = "block";
-}
 
 noBtn.onclick = function() {
     deleteBlogModal.style.display = "none";
 }
 
+for(i=0; i<=4; i++) {
+    document.getElementsByClassName('trash-btn')[i].onclick = function() {
+        deleteBlogModal.style.display = "block";
+    }    
+}
