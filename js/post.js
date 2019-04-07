@@ -110,8 +110,3 @@ function adjustTextAreaWidth(_textAreaField) {
     _textAreaField.style.width = (25 + _textAreaField.scrollWidth) + "px";
     
 }
-
-
-
-
-
