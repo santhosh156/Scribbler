@@ -27,7 +27,7 @@
 }
 
 .blogContent {
-    padding: 24px;
+    padding: 20px 40px;
 }
 
 
@@ -80,17 +80,21 @@
 
 .like-btn {
     border-radius: 2px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-bottom: 4px;
+    padding: 8px 20px;
+    margin-bottom: 8px;
+}
+#likeMessage{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #commentField {
-    width: 100%;
+    width: 60%;
+    display: block;
 }
 
 .commments-btn {
-    margin-top: 4px;
+    margin-top: 8px;
+    padding: 8px 16px;
 }
 
 .comments-title {
@@ -100,6 +104,7 @@
 .comments-list {
     background-color: lightgrey;
     padding: 8px;
+    width: 60%;
 }
 
 .comment-list-item {
