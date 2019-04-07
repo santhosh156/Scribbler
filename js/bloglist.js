@@ -13,3 +13,7 @@ for(i=0; i<=4; i++) {
         deleteBlogModal.style.display = "block";
     }    
 }
+
+function openPost(postId){
+    window.location.href = "post.html?id=" + postId;
+}

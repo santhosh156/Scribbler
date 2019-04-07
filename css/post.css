@@ -1,19 +1,117 @@
-.blogTite {
+.blogTitle {
     font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
 .blogText {
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
 .blogAuthor {
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
 }
-.blogContent{
 
+.blogAuthor p {
+    margin: 0px;
 }
+
+.blogContent {
+    padding: 24px;
+}
+
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+
+#blogBody {
+    text-align: justify;
+}
+
+.post-action-btns {
+    background-color: #ef426b;
+    color: white;
+    width: auto;
+    padding: 8px;
+    box-shadow: 0px 3px 5px 0px rgba(239, 66, 107, 0.5);
+}
+
+.save-btn,
+#blogTitleEditor,
+#blogBodyEditor {
+    display: none;
+}
+
+#blogTitleEditor,
+#blogBodyEditor {
+    resize: none;
+    border-color: #ef426b;
+}
+
+#blogTitleEditor {
+    width: auto;
+    white-space: nowrap;
+    font-size: 24px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+}
+
+#blogBodyEditor {
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    margin: 16px 0px;
+}
+
+.likes-container {
+    margin-bottom: 16px;
+}
+
+.like-btn {
+    border-radius: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 4px;
+}
+
+#commentField {
+    width: 100%;
+}
+
+.commments-btn {
+    margin-top: 4px;
+}
+
+.comments-title {
+    margin-bottom: 8px;
+}
+
+.comments-list {
+    background-color: lightgrey;
+    padding: 8px;
+}
+
+.comment-list-item {
+    background-color: white;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.comment-list-item:not(first-child) {
+    margin-top: 6px;
+}
+
+.small {
+    font-size: 80%;
+}

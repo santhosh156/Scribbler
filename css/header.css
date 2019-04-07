@@ -1,8 +1,8 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 
-.logo-title{
-    font-family: Satisfy , cursive;
+.logo-title {
+    font-family: Satisfy, cursive;
     font-size: 50px;
     color: #112fb4;
     margin: auto;
@@ -11,37 +11,40 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     cursor: pointer;
 }
 
-.middleText{
+.middleText {
     font-family: 'Marck Script', cursive;
     margin-top: 0;
     margin: 0 0 0px 10px;
 }
 
 input.topButtons {
-    width: 90px;
     padding: 10px;
     cursor: pointer;
     font-weight: 500;
-    font-size: 90%;
+    font-size: 80%;
     background: #0000ff;
     color: #fff;
     float: right;
     margin: 10px 10px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 16px;
 }
 
-.modal
-{
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
     width: 100%;
     height: 100%;
-    padding-top: 10px; /* Location of the box */
+    padding-top: 10px;
+    /* Location of the box */
     top: 0;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black w/ opacity */
 }
 
 .modal-content {
@@ -50,9 +53,8 @@ input.topButtons {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 30%;
-    height: 65%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 33%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -63,13 +65,27 @@ input.topButtons {
 }
 
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 /* The Close Button */
@@ -78,9 +94,10 @@ input.topButtons {
     float: right;
     font-size: 35px;
 }
+
 .close:hover,
 .close:focus {
-    color:black;
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
@@ -94,7 +111,7 @@ input.topButtons {
 }
 
 .modal-body {
-    margin-top: 20px;
+    margin-top: 8px;
     padding: 10px 20px 20px 20px;
     background-color: white;
 }
@@ -105,7 +122,7 @@ input.topButtons {
     justify-content: center;
     align-items: center;
     margin: -15px 0px 10px 0px;
-    width : 100%;
+    width: 100%;
     background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -115,21 +132,23 @@ input.topButtons {
 
 label {
     text-align: left;
+    font-size: 16px;
 }
-input[type=text], input[type=password] {
+
+input[type=text],
+input[type=password] {
     width: 100%;
     padding: 10px 20px 10px 10px;
-    margin: 10px 0px 25px 0px;
+    margin: 4px 0px 16px 0px;
     background-color: #F0F0F0;
     display: inline-block;
     border: 0px solid whitesmoke;
     box-sizing: border-box;
     font-family: Abel, Regular;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 button {
-    width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -142,35 +161,19 @@ hr {
     width: 90%;
 }
 
-input.centerButtons {
-    width: 100px;
-    padding: 10px 10px 10px 10px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 90%;
-    background: #daa520;
-    color: #000000;
-    margin: 10px 10px 0px 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-.postButtons {
-    display : flex;
-    flex-direction: row;
-    margin: 200px 10px 0px 0px;
-    justify-content: center;
-}
-
-.signUpLink{
-    color : blue;
+.signUpLink {
+    color: blue;
+    margin-left: 8px;
 
 }
+
 .signUpLink:hover,
 .signUpLink:focus {
     cursor: pointer;
 }
 
-input.createPostButton{
+input.createPostButton {
     width: 30%;
     background-color: blue;
     color: white;
@@ -181,87 +184,52 @@ input.createPostButton{
     cursor: pointer;
 }
 
-input.createButton{
-    width: 10%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-}
-
-.postButton{
+.postButton {
     margin: 0px 0px 0px 150px;
-    width : 30%
+    width: 30%
 }
 
-.create-post-modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 70%;
-    height: 95%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
-    text-align: left;
+
+
+/* few changes by kathir - below  */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
-@-webkit-keyframes animatetop {
-    from {top:-500px; opacity:0}
-    to {top:0; opacity:1}
+* html .clearfix {
+    zoom: 1;
 }
 
-@keyframes animatetop {
-    from {top:-500px; opacity:0}
-    to {top:0; opacity:1}
+/* IE6 */
+*:first-child+html .clearfix {
+    zoom: 1;
 }
 
-.create-post-modal-header {
-    background-color: white;
-    color: black;
-    text-align: center;
-    font-family: Abel, Regular;
-    font-size: 20px;
-    margin-top: -20px;
+/* IE7 */
+.top-buttons,
+.logo-container {
+    display: inline-block;
 }
 
-.create-post-modal-body {
-    margin: -30px 0px 0px 40px;
-    font-family: Abel, Regular;
-    font-weight: bolder;
-    font-size: 20px;
+.logo-container {
+    float: left;
 }
 
-.create-modal-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0px 10px 0px;
-    width : 100%;
-    background-color: white;
-    color: black;    
+.top-buttons {
+    float: right;
 }
 
-#createPostClose {
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-    padding-right: 15px;
-    margin-top: -10px;
+.modal-header h1 {
+    margin-bottom: 4px;
 }
 
-#title {
-    width: 50%;
+.signup-btn,
+.signin-btn {
+    font-size: 14px;
+    width: 100%;
 }
-
-#contentTextarea {
-    background-color: #F0F0F0;
-}
-

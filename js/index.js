@@ -1,7 +1,5 @@
 var createpostmodal = document.getElementById("createPostModal");
-
 var createPostBtn = document.getElementById("createPostBtn");
-
 var createPostClose = document.getElementById("createPostClose");
 
 document.getElementById("createPostBtn").onclick = function() {
@@ -17,5 +15,9 @@ window.onclick = function(event) {
     if (event.target == createpostmodal) {
         createpostmodal.style.display = "none";
     }
+}
+
+function redirectToAllPosts() {
+    window.location.href = 'html/bloglist.html';
 }
 
